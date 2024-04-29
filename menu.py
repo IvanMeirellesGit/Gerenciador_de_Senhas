@@ -2,6 +2,7 @@ from gerenciar_senha import gerar_senha, guardar_senha
 from salvar_senha import carregar_senhas
 
 
+
 def exibir_title():
     print('\n-----------------------------')
     print('Gerenciador de Senhas')
