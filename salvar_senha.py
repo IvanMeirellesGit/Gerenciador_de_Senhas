@@ -1,6 +1,10 @@
 import json
 
 
+def carregar_senhas(arquivo_json='passwords.json'):
+    return manipular_arquivo_json(arquivo_json)
+
+
 def manipular_arquivo_json(arquivo_json, default=[]):
     try:
         with open(arquivo_json, 'r') as file:
@@ -17,5 +21,3 @@ def salvar_senha(servico, email, senha, arquivo_json='passwords.json'):
         json.dump({'senhas': senhas}, file, indent=4)
 
 
-def carregar_senhas(arquivo_json='passwords.json'):
-    return manipular_arquivo_json(arquivo_json)
