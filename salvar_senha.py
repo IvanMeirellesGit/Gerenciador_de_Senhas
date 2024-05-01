@@ -21,3 +21,4 @@ def salvar_senha(servico, email, senha, arquivo_json='passwords.json'):
         json.dump({'senhas': senhas}, file, indent=4)
 
 
+
